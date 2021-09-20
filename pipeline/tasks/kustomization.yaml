@@ -2,3 +2,4 @@ namespace: ocp-pipelines-demo
 
 resources:
   - git-clone-task.yaml
+  - maven-task.yaml
