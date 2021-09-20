@@ -5,6 +5,7 @@ metadata:
 spec:
   workspaces:
     - name: shared-workspace
+    - name: maven-settings
   params:
     - name: git-url
       type: string
@@ -35,3 +36,13 @@ spec:
           value: "true"
         - name: revision
           value: $(params.git-revision)
+    - name: maven-build
+      taskRef:
+        name: maven
+      workspaces:
+        - name: source
+          workspace: shared-workspace
+        - name: maven-settings
+          workspace: maven-settings
+      runAfter:
+        - fetch-repository

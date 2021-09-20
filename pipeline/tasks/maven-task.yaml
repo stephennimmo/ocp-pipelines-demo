@@ -148,3 +148,4 @@ spec:
         - -s
         - $(workspaces.maven-settings.path)/settings.xml
         - "$(params.GOALS)"
+        - -ntp
