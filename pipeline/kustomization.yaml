@@ -1,0 +1,12 @@
+namespace: ocp-pipelines-demo
+
+bases:
+  - tasks
+resources:
+  - event-listener.yaml
+  - namespace.yaml
+  - pipeline.yaml
+  - route.yaml
+  - trigger.yaml
+  - trigger-binding.yaml
+  - trigger-template.yaml
