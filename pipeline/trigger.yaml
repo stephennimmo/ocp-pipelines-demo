@@ -17,7 +17,7 @@ spec:
   bindings:
     - ref: ocp-pipelines-demo-app-trigger-binding
   template:
-    ref: ocp-pipelines-demo-app-template
+    ref: ocp-pipelines-demo-app-trigger-template
 ---
 apiVersion: v1
 kind: Secret
